@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>QA Model</title>
+</head>
+<body>
+
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-sm">
+            <h2>Question-Answering Model</h2>
+        </div>
+        <div class="col-sm" style="text-align: right">
+            Powered by <a href="https://huggingface.co/deepset/roberta-base-squad2" target="_blank"><img src="img/hf.png" style="height:27px"></a>
+        </div>
+      </div>
+      <br>        
+    <label for="context">Context</label>
+    <div class="input-group"  >
+            <textarea class="form-control" id="context" aria-label="Lorem Ipsum Dolor Sit Amet" placeholder="Lorem Ipsum Dolor Sit Amet"></textarea>
+                      <button class="btn btn-outline-dark rounded-circle" id="contextButton"><i class="fas fa-sync-alt"></i></button>
+    </div>
+
+    <br>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="questionLabel" style="width: 90px;">Question</span>
+        </div>
+        <input type="text" class="form-control" id="question" aria-label="Ask me a question" placeholder="Ask me a question"
+               aria-describedby="inputGroup-sizing-default" style="opacity: 0.75;">
+        <div class="input-group-append">
+            <button class="btn btn-primary" id="answerButton" type="button">Ask</button>
+        </div>
+    </div>
+    <br>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default" style="width: 90px;">Answer</span>
+        </div>
+        <input type="text" class="form-control" id="answer" aria-label="42" aria-describedby="inputGroup-sizing-default" placeholder="42" style="opacity: 0.75;">
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-danger" role="progressbar" id="confidence" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <a class="navbar-brand" href="https://github.com/ChrisKnott/Eel" target="_blank" style="font-size: 12px; ">Made with Eel</a>
+        <a class="navbar-brand" href="https://github.com/detsutut" target="_blank" style="font-size: 12px; ">© Detsutut, 2021 </a> 
+        <div style="text-align: right;"><a href="http://www.labmedinfo.org/" target="_blank"><img src="img/unipv.png" style="height:35px; text-align: right"></a>&nbsp;&nbsp;</div>
+    </nav>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../eel.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
