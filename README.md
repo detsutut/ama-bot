@@ -16,7 +16,7 @@
   <h3 align="center">AMA (Ask Me Anything) Bot</h3>
 
   <p align="center">
-    Question-Answering interface powered by Transformers
+    A modern and lightweight NLP interface for Question-Answering<br/>Fork this project to showcase your Python models with elegant web application in no time!
     <br />
     <a href="https://github.com/detsutut/qa-webgui"><strong>Explore the docs »</strong></a>
     <br />
@@ -61,7 +61,7 @@
 
 Python is one the trending programming languages to build and run Natural Language Processing pipelines. However, while programming a simple GUI framework is not much of a difficult task in Python, building a modern and nice interface can be a real nightmare, involving heavy external libraries and steep learning curves.
 
-This projects aims to provide a simple environment to showcase Huggingface NLP Models internally with modern and well-designed user interfaces. By binding Python with HTML, CSS and Javascript with Eel, this environment can be easily extended by those who are familiar with web design to build amazing web application within a few hours, with almost no additional effort.
+This projects aims to provide a simple environment to showcase Huggingface NLP Models internally with modern and well-designed user interfaces. By binding Python with HTML, CSS and Javascript with [Eel](https://github.com/ChrisKnott/Eel) (a little Python library for making simple Electron-like apps), this environment can be easily extended by those who are familiar with web design to build amazing web application within a few hours, with almost no additional effort.
 
 With this aim in mind, I decided to implement a Qustion-Answering (QA) bot, called "Ask Me Anything (AMA) Bot" and based on [Deepset's RoBERTa implementation](https://huggingface.co/deepset/roberta-base-squad2) , hosted on Huggingface and trained on SQuAD 2.0 for extractive QA.
 
@@ -76,9 +76,9 @@ With this aim in mind, I decided to implement a Qustion-Answering (QA) bot, call
 
 This project is mainly written in Python+Javascript and built with:
 
-* [Huggingface Transformers](https://huggingface.co/transformers/)
-* [Eel](https://github.com/ChrisKnott/Eel)
-* [Bootstrap](https://getbootstrap.com)
+* [Huggingface Transformers](https://huggingface.co/transformers/) for the NLP pipeline
+* [Eel](https://github.com/ChrisKnott/Eel) for the Python-Javascript binding
+* [Bootstrap](https://getbootstrap.com) for front-end UI design
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
