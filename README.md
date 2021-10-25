@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]](https://github.com/detsutut/qa-webgui/network/members)
+[![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
@@ -16,7 +16,7 @@
   <h3 align="center">AMA (Ask Me Anything) Bot</h3>
 
   <p align="center">
-    A modern and lightweight NLP interface for Question-Answering systems and many more.<br/>Fork this project to showcase your Python models with elegant web application in no time!
+    A modern and lightweight NLP interface for Question-Answering systems and more.<br/><a href="https://github.com/detsutut/qa-webgui/network/members">Fork this project</a> to showcase your Python models with elegant web application in no time!
     <br />
     <a href="https://github.com/detsutut/qa-webgui"><strong>Explore the docs »</strong></a>
     <br />
@@ -65,7 +65,7 @@ This projects aims to provide a simple environment to showcase Huggingface NLP M
 
 With this aim in mind, I decided to implement a Qustion-Answering (QA) bot, called "Ask Me Anything (AMA) Bot" and based on [Deepset's RoBERTa implementation](https://huggingface.co/deepset/roberta-base-squad2) , hosted on Huggingface and trained on SQuAD 2.0 for extractive QA.
 
-<img src="web/img/example.png" alt="Example">
+<img src="web/img/example.png" style="border-radius: 5px" alt="Example">
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
