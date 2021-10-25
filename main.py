@@ -9,10 +9,9 @@ eel.init("web")
 # Exposing the function to javascript
 @eel.expose
 def load_answer(quest, cont):
-    print("Computing Answer")
+    print("Computing Answer...")
     QA_input = {"question": str(quest),
              "context": str(cont)}
-    print(QA_input)
     return nlp(QA_input)
 
 # Start the index.html file

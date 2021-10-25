@@ -10,24 +10,26 @@
           integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 
-    <title>QA Model</title>
+    <title>AMA Bot</title>
 </head>
 <body>
 
 <div class="container">
-    <br>
     <div class="row">
         <div class="col-sm">
-            <h2>Question-Answering Model</h2>
+            <h3><img src="img/logo.png" style="height:90px"> <b>B O T</b></h3>
         </div>
         <div class="col-sm" style="text-align: right">
+            <br>
             Powered by <a href="https://huggingface.co/deepset/roberta-base-squad2" target="_blank"><img src="img/hf.png" style="height:27px"></a>
+            <br>
+            <a href="#" class="badge badge-pill badge-primary" onclick="runTest();" style="cursor: pointer; font-weight:normal;">What is a QA Bot?</a>
         </div>
       </div>
       <br>        
-    <label for="context">Context</label>
+    <label for="context">Context:</label>
     <div class="input-group"  >
-            <textarea class="form-control" id="context" aria-label="Lorem Ipsum Dolor Sit Amet" placeholder="Lorem Ipsum Dolor Sit Amet"></textarea>
+            <textarea class="form-control" id="context" aria-label="Insert context here" placeholder="Insert context here"></textarea>
                       <button class="btn btn-outline-dark rounded-circle" id="contextButton"><i class="fas fa-sync-alt"></i></button>
     </div>
 
@@ -57,8 +59,12 @@
     <br>
     <br>
     <nav class="navbar fixed-bottom navbar-light bg-light">
-        <a class="navbar-brand" href="https://github.com/ChrisKnott/Eel" target="_blank" style="font-size: 12px; ">Made with Eel</a>
-        <a class="navbar-brand" href="https://github.com/detsutut" target="_blank" style="font-size: 12px; ">© Detsutut, 2021 </a> 
+        <div class="btn-group" role="group" aria-label="Basic example">
+        <a class="github-button" href="https://github.com/detsutut" aria-label="Follow @detsutut on GitHub">Detsutut</a>&nbsp;
+        <a class="github-button" href="https://github.com/detsutut/qa-webgui" data-icon="octicon-star" aria-label="Star ntkme/github-buttons on GitHub">Star</a>&nbsp;
+        <a class="github-button" href="https://github.com/sponsors/detsutut" data-icon="octicon-heart" aria-label="Sponsor @detsutut on GitHub">Sponsor</a>
+    </div>
+    <a class="navbar-brand" href="https://github.com/ChrisKnott/Eel" target="_blank" style="font-size: 12px; ">© Detsutut 2021 - Made with Eel</a>
         <div style="text-align: right;"><a href="http://www.labmedinfo.org/" target="_blank"><img src="img/unipv.png" style="height:35px; text-align: right"></a>&nbsp;&nbsp;</div>
     </nav>
 </div>
@@ -71,5 +77,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../eel.js"></script>
 <script src="./script.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
