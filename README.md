@@ -7,7 +7,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <h2>
@@ -22,8 +21,6 @@
     <a href="https://github.com/detsutut/qa-webgui"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/detsutut/qa-webgui">View Demo</a>
-    ·
     <a href="https://github.com/detsutut/qa-webgui/issues">Report Bug</a>
     ·
     <a href="https://github.com/detsutut/qa-webgui/issues">Request Feature</a>
@@ -62,9 +59,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+Python is one the trending programming languages to build and run Natural Language Processing pipelines. However, while programming a simple GUI framework is not much of a difficult task in Python, building a modern and nice interface can be a real nightmare, involving heavy external libraries and steep learning curves.
+
+This projects aims to provide a simple environment to showcase Huggingface NLP Models internally with modern and well-designed user interfaces. By binding Python with HTML, CSS and Javascript with Eel, this environment can be easily extended by those who are familiar with web design to build amazing web application within a few hours, with almost no additional effort.
+
+With this aim in mind, I decided to implement a Qustion-Answering (QA) bot, called "Ask Me Anything (AMA) Bot" and based on [Deepset's RoBERTa implementation](https://huggingface.co/deepset/roberta-base-squad2) , hosted on Huggingface and trained on SQuAD 2.0 for extractive QA.
+
 <img src="web/img/example.png" alt="Example">
 
-Work In Progress
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -72,32 +74,41 @@ Work In Progress
 
 ### Built With
 
-Work In Progress
+This project is mainly written in Python+Javascript and built with:
 
+* [Huggingface Transformers](https://huggingface.co/transformers/)
+* [Eel](https://github.com/ChrisKnott/Eel)
 * [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Work In Progress
+To get a local copy of the AMA Bot up and running follow these simple example steps.
 
 ### Prerequisites
 
-Work In Progress
-* npm
+This project depends on two Python Modules that must be installed in your virtual environment before running the main script.
+* huggingface transformers
   ```sh
-  npm install npm@latest -g
+  python -m pip install transformers
   ```
-
+* eel
+  ```sh
+  python -m pip install eel
+  ```
+  
 ### Installation
 
-1. Work In Progress
-2. Work In Progress
+1. Copy this repository 
+2. Activate the virtual environment where Python Modules are installed
+3. Run the main script
+    ```sh
+    python main.py
+    ```
+You can also create a runnable batch file on Windows. Check the `gui.bat` template provided and change the path to point to your target virtual environment.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -106,9 +117,11 @@ Work In Progress
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Work In Progress
+The way extractive QA bots work is simple.
 
-_Work In Progress_
+1) The user provides the context, which is usually a relatively long text that is supposed to include the answers to the user's questions.
+2) The user formulates a question and press the ask button.
+3) The model will scan the context and output its guess about the answer, which will be part of the context itself. The answer comes with a confidence core, which is an indicator of how reliable the model's prediction is.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -117,11 +130,10 @@ _Work In Progress_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Work In Progress
-- [x] Work In Progress
-- [] Work In Progress
-    - [] Work In Progress
-    - [] Work In Progress
+- [x] Basic implementation
+- [x] Confidence Score
+- [ ] Answer highlighting in context
+- [ ] Uploading different checkpoint
 
 See the [open issues](https://github.com/detsutut/qa-webgui/issues) for a full list of proposed features (and known issues).
 
@@ -140,7 +152,7 @@ Distributed under the GPL-3 License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Tommaso Mario Buonocore  [![LinkedIn][linkedin-shield]][linkedin-url]  [![Gmail][gmail-shield]][gmail-url]
+Tommaso Mario Buonocore <br> [![LinkedIn][linkedin-shield]][linkedin-url]  [![Gmail][gmail-shield]][gmail-url]
 
 Project Link: [https://github.com/detsutut/qa-webgui](https://github.com/detsutut/qa-webgui)
 
@@ -151,9 +163,11 @@ Project Link: [https://github.com/detsutut/qa-webgui](https://github.com/detsutu
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Lorem Ipsum Dolor Sit Amet
+Gratitude for support, assistance and inspiration goes to:
 
-* [WIP](https://wikipedia.org)
+* [BMI Lab - University of Pavia](http://www.labmedinfo.org/index.php/en/10-2/)
+* [Huggingface Forum](https://discuss.huggingface.co/)
+* [Readme Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
