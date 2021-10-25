@@ -16,7 +16,7 @@
   <h3 align="center">AMA (Ask Me Anything) Bot</h3>
 
   <p align="center">
-    A modern and lightweight NLP interface for Question-Answering<br/>Fork this project to showcase your Python models with elegant web application in no time!
+    A modern and lightweight NLP interface for Question-Answering systems and many more.<br/>Fork this project to showcase your Python models with elegant web application in no time!
     <br />
     <a href="https://github.com/detsutut/qa-webgui"><strong>Explore the docs »</strong></a>
     <br />
